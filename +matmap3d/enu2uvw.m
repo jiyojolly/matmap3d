@@ -5,7 +5,7 @@ function [u,v,w] = enu2uvw(east,north,up,lat0,lon0,angleUnit)
 %%% Inputs
 % * e,n,up:  East, North, Up coordinates of point(s) (meters)
 % * lat0,lon0: geodetic coordinates of observer/reference point (degrees)
-% * angleUnit: string for angular units. Default 'd': degrees
+% * angleUnit: char for angular units. Default 'd': degrees
 %
 %%% outputs
 % * u,v,w:   coordinates of test point(s) (meters)
@@ -15,7 +15,7 @@ arguments
   up {mustBeReal}
   lat0 {mustBeReal}
   lon0 {mustBeReal}
-  angleUnit (1,1) string = "d"
+  angleUnit (1,1) char = 'd'
 end
 
 if startsWith(angleUnit, 'd')
