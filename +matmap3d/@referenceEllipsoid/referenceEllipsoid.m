@@ -21,7 +21,7 @@ end
 methods
 function e = referenceEllipsoid(name, lengthUnit)
 arguments
-  name (1,1) char = 'wgs84'
+  name char = 'wgs84'
   lengthUnit (1,1) char = 'm'
 end
 
